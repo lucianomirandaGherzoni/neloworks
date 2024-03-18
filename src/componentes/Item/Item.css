@@ -1,21 +1,35 @@
-.productoCard{
-    background-color:var(--clr-blanco);
-    margin: 1rem;
+.productoCard {
+    margin: .5rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     align-items: center;
-    border-radius: 5px;
+    padding: 1rem;
+}
+
+.detalles-button {
+    opacity: 0%;
+
+}
+
+.productoCard:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
-.productoCard img{
+
+.productoCard:hover .detalles-button {
+    opacity: 100%;
+    transition: all 1.3s;
+}
+
+.productoCard img {
     width: 100%;
     object-fit: cover;
+    max-height: 300px;
 
 }
 
-.producto-descripcion-card{
+
+.producto-descripcion-card {
     width: 100%;
     height: 100%;
     display: flex;
@@ -23,23 +37,16 @@
     justify-content: space-between;
     text-align: center;
 }
-.producto-descripcion-card a{
+
+.producto-descripcion-card a {
     text-decoration: none;
     text-align: center;
+    justify-content: center;
     padding: 10px;
-    background-color: var(--clr-oscuro);
-    color: var(--clr-blanco);
-    border-top: 1px solid var(--clr-oscuro);
-    margin: 0rem;
-    width: 100%;
-}
-.producto-descripcion-card 
-a:hover {
-    background-color:var(--clr-blanco);
     color: var(--clr-oscuro);
-    transition: all .3s;
+    font-weight: 700;
 }
-.producto-descripcion-card h3{
-    color: var(--clr-oscuro);
-    font-size: 1.5rem;
+
+.producto-descripcion-card a:hover {
+    color: var(--clr-rojo);
 }

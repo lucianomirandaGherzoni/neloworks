@@ -3,12 +3,12 @@ import CardWidget from "../CardWidget/CardWidget";
 import "./NavBar.css";
 import { NavLink, Link } from 'react-router-dom';
 const NavBar = () => {
-    const logoBerlini = "../img/logo.png";
+    const logoNelo = "../img/logo.png";
     return (
         <header>
             <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body  navbar-color" data-bs-theme="dark">
                 <div className="container-fluid navbar-boostrap">
-                    <Link to="/"><img className='logo navbar-brand' src={logoBerlini} alt="logo berlini" /> </Link>
+                    <Link to="/"><img className='logo navbar-brand' src={logoNelo} alt="logo berlini" /> </Link>
                     <button className="navbar-toggler" type="button" >
                     <CardWidget />
                     </button>
@@ -22,23 +22,23 @@ const NavBar = () => {
                             <li className="nav-item">
                                 <NavLink className="nav-link active" to="/"> Inicio </NavLink>
                             </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link active" to="/"> Contacto </NavLink>
-                            </li>
-
                             <li className="nav-item dropdown">
                                 <strong className="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Productos
                                 </strong>
                                 <ul className="dropdown-menu">
                                     <li><NavLink className="dropdown-item" to="productos">Todos los Productos</NavLink></li>
-                                    <li><NavLink className="dropdown-item" to="categoria/1">Sorrentinos</NavLink></li>
-                                    <li><NavLink className="dropdown-item" to="categoria/2">Tallarines</NavLink></li>
-                                    <li><NavLink className="dropdown-item" to="categoria/3">Salsas</NavLink></li>
+                                    <li><NavLink className="dropdown-item" to="categoria/1">Alfombras</NavLink></li>
+                                    <li><NavLink className="dropdown-item" to="categoria/2">Tapices</NavLink></li>
+                                    <li><NavLink className="dropdown-item" to="categoria/3">Deco</NavLink></li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link active" to="/"> Acerca de Berlini </NavLink>
+                                <NavLink className="nav-link active" to="/"> Contacto </NavLink>
+                            </li>
+                            
+                            <li className="nav-item">
+                                <NavLink className="nav-link active" to="/"> Informacion de Envios </NavLink>
                             </li>
                             <li className="nav-item">
                                 <div className="nav-link active" > <CardWidget /> </div>

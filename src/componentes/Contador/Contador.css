@@ -7,7 +7,7 @@
  }
  .contador button:hover{
   transition: .5s;
- background-color: var(--clr-claro);
+ background-color: var(--clr-amarillo);
 
  }
  .contador {

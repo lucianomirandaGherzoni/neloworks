@@ -5,7 +5,7 @@ import { CarritoContext } from '../../context/CarritoContext';
 import './ItemDetail.css';
 
 
-const ItemDetail = ({ id, nombre, precio, img, stock, descripcion }) => {
+const ItemDetail = ({ id, nombre, precio, img, descripcion, stock }) => {
 
     const [agregarCantidad, setAgregarCantidad] = useState(0);
 
@@ -35,8 +35,7 @@ const ItemDetail = ({ id, nombre, precio, img, stock, descripcion }) => {
                 <h2>{nombre}</h2>
                 <p> {descripcion} </p>
                 <div>
-                <h3> $ {precio}</h3>
-                <h4>Stock {stock}</h4>   
+                <h3> $ {precio}</h3> 
                 </div>
                   
                 {
